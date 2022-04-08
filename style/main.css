@@ -9,6 +9,12 @@ header{
 main{
    
 }
+/* esto es solo para ver como se estan pintando los divs */
+div{
+    border-color: #aaaaaa;
+   border-width: 1px;
+   border-style: solid;
+}
 
 /*====================
 ========Columns=======
@@ -60,6 +66,8 @@ main{
     display: flex;
     margin-right: 1em;
 }
+
+/*  */
 
 .desktop-three-columns{
     display: flex;
