@@ -3,18 +3,15 @@
 ======================*/
 
 header{
-   
+
 }
+
+
 
 main{
    
 }
-/* esto es solo para ver como se estan pintando los divs */
-div{
-    border-color: #aaaaaa;
-   border-width: 1px;
-   border-style: solid;
-}
+
 
 /*====================
 ========Columns=======
@@ -117,4 +114,77 @@ a, td, p, button, span{
 
 img {
     max-width: 100%;
+}
+
+
+
+/*====================
+========header-top=======
+======================*/
+
+.header-top {
+    background-color: #e6e6e6;
+}
+
+.header-top .header-top-featured-news ul{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.header-top .header-top-featured-news ul li{
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    display: inline;
+}
+
+.header-top .header-top-editions ul{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.header-top .header-top-editions ul li{
+    font-size: 0.8rem;
+    display: inline;
+}
+
+
+
+/*====================
+========header-main=======
+======================*/
+
+.header-main {
+    background-color: hsl(0, 100%, 38%);
+}
+
+.header-main .header-main-menu-button {
+    width: 55px;
+    height: auto;
+    color: hsl(0, 0%, 100%);
+}
+
+.header-main .header-main-logo {
+    font-size: xx-large;
+}
+
+.header-main .header-main-logo h1{
+    color: #f2f2f2;
+}
+
+/*====================
+========header-menu=======
+======================*/
+
+.header-menu .topnav {
+    background-color: hsl(0, 0%, 61%);
+    overflow: hidden;
+}
+
+.header-menu .topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
