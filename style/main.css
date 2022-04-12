@@ -2,16 +2,10 @@
 =======Structure======
 ======================*/
 
-header{
-
-}
-
-
-
 main{
-   
+    margin: 0 auto;
+    width: 90%;
 }
-
 
 /*====================
 ========Columns=======
@@ -94,11 +88,11 @@ h1, h2, h3, h4, h5, h6, a, p{
     color: hsl(0, 0%, 0%);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Roboto";
 }
 
-h5, h6 {
+h6, li {
     font-family: "Roboto Condensed";
 }
 
@@ -116,75 +110,243 @@ img {
     max-width: 100%;
 }
 
-
-
 /*====================
 ========header-top=======
 ======================*/
 
 .header-top {
-    background-color: #e6e6e6;
+    background-color: hsl(0, 0%, 90%);
+    padding: 0.5rem 5%;
+    width: 90%;
 }
 
-.header-top .header-top-featured-news ul{
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+.header-top-featured-news {
+    width: 85%;
 }
 
-.header-top .header-top-featured-news ul li{
-    padding-left: 2rem;
+.header-top-featured-news ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-featured-news ul li{
     font-size: 0.8rem;
-    display: inline;
 }
 
-.header-top .header-top-editions ul{
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+.header-top-featured-news ul li:first-child{
+    color: hsl(0, 100%, 40%);
+    font-weight: 600;
 }
 
-.header-top .header-top-editions ul li{
-    font-size: 0.8rem;
-    display: inline;
+.header-top-featured-news ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
 }
 
+.header-top-editions{
+    margin-left: auto;
+    width: 50%
+}
+
+.header-top-editions ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-editions ul li{
+    font-size: 0.7rem;
+}
+
+.header-top-editions ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.5rem;
+    color: hsl(0, 0%, 67%);
+    font-weight: 600;
+}
 
 
 /*====================
 ========header-main=======
 ======================*/
-
-.header-main {
-    background-color: hsl(0, 100%, 38%);
+.header-main{
+    background-color:hsl(0, 100%, 40%);
+    padding: 0.5rem 5%;
+    width: 90%;
 }
 
-.header-main .header-main-menu-button {
-    width: 55px;
-    height: auto;
+.header-main .header-main-menu-button svg{
+    width: 3.7rem;
     color: hsl(0, 0%, 100%);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.header-main .header-main-logo {
-    font-size: xx-large;
+.header-main-logo svg{
+    width: 19rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
-.header-main .header-main-logo h1{
-    color: #f2f2f2;
+.header-main-logo svg path{
+    fill:hsl(0, 0%, 100%)
+}
+
+.header-main-users{
+    margin-left: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    }
+
+.header-main-users-login-button {
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-main-users-login-button span{
+    margin-right: 0.5rem;
+}
+
+
+.header-main-users-login-button svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header-main-users-register-button{
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 0rem;
+    font-weight: 900;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #ffc700;
+    font-style: italic;
+    cursor: pointer;
 }
 
 /*====================
 ========header-menu=======
 ======================*/
-
-.header-menu .topnav {
-    background-color: hsl(0, 0%, 61%);
-    overflow: hidden;
+.header-menu {
+    background-color:hsl(0, 0%, 90%);
+    padding: 0.5rem 5%;
+    width: 90%;
 }
 
-.header-menu .topnav a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.header-menu ul{
+    display: flex;
+    justify-content: space-between;
 }
+
+.header-menu ul li{
+    color: hsl(0, 0%, 0%);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.header-menu ul li svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header-menu ul li:last-child svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+
+/*====================
+=======Banners=======
+======================*/
+.ad{
+    margin: 1rem auto;
+    width: max-content;
+}
+
+.ad.sticky{
+    position: sticky;
+    top: 0;
+}
+
+/*====================
+========News==========
+======================*/
+
+.news{
+    margin-top: 1rem;
+}
+
+.news-category{
+    margin: 0.3rem 0;
+}
+
+.news-author{
+    margin: 0.3rem 0;
+}
+
+.news-author h5{
+    color: hsl(0, 0%, 33%);
+    font-size: 0.9rem;
+}
+
+.news-category h5,
+.news-title h1:hover,
+.news-title h2:hover,
+.news-title h3:hover
+{
+    color: hsl(0, 100%, 50%);
+    cursor: pointer;
+}
+
+.news.red{
+    background-color: #cd0000;
+}
+
+.news.red .news-box{
+    padding: 0.2rem 0.5rem;
+}
+
+.news.red .news-category h5{
+    color: rgb(240, 207, 207);
+}
+
+.news.red .news-title h2{
+    color: rgb(255, 255, 255);
+}
+
+.news.red .news-title h2:hover{
+    color: hsl(0, 0%, 50%);
+    cursor: pointer;
+}
+
+.news.red .news-description p{
+    color: rgb(255, 255, 255);
+}
+
+.news.red .news-author h5{
+    color: rgb(255, 255, 255);
+}
+
+.news.red .news-links{
+    background-color: hsl(0, 0%, 100%);
+    padding: 0.2rem 0;
+}
+
+.news.red .news-links p::before{
+    content: "∎";
+    color: red;
+}
+
+.news.red .news-links p:hover{
+    color: hsl(0, 100%, 50%);
+    cursor: pointer;
+}
+
